@@ -8,16 +8,48 @@
 </head>
 
 <body>
+    <!-- <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <input type="text" id="nameOfThem">
+        <input type="button" name="next" class="next action-button" value="Next"/>
+    </div> -->
+    <div class="content">
+        <H4 class="name">Chúc mừng sinh nhật em</H4>
+        <canvas class="confetti" id="canvas"></canvas>
+    </div>
     <audio id="divAudio" autoplay loops>
         <source src="./happy-birthday-155461.mp3" type="audio/mp3">
     </audio>
-    <H4 class="name">Chúc mừng sinh nhật mẹ yêu</H4>
-    <canvas class="confetti" id="canvas"></canvas>
 </body>
 
 </html>
 
 <style>
+    .action-button {
+        width: 100px;
+        background: #ee0979;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 25px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+
+    .action-button:hover, .action-button:focus {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+    }
+    input {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 0px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: montserrat;
+        color: #2C3E50;
+        font-size: 13px;
+    }
     .confetti {
         max-width: 100%;
         display: block;
